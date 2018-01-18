@@ -12,7 +12,10 @@ public class Application {
     private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
-        logger.info("Initializing task-manager");
+        //Ante un conflicto en el mensaje a imprimir, nos quedamos con el de la rama next 
+	//(porque queremos esos cambios)
+	// la línea de código de 'next' era: logger.info("Initializing task-manager");
+        logger.info("Inicializando aplicacion...");
         SpringApplication.run(Application.class, args);
     }
 
